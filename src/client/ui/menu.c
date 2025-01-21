@@ -2335,6 +2335,7 @@ static menuSound_t Menu_DefaultKey(menuFrameWork_t *m, int key)
     switch (key) {
     case K_ESCAPE:
     case K_MOUSE2:
+    case 'b':
         UI_PopMenu();
         return QMS_OUT;
 
@@ -2376,6 +2377,7 @@ static menuSound_t Menu_DefaultKey(menuFrameWork_t *m, int key)
 
     case K_KP_ENTER:
     case K_ENTER:
+    case 'a':
         return Menu_SelectItem(m);
     }
 

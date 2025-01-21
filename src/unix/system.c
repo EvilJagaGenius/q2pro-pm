@@ -430,11 +430,11 @@ int main(int argc, char **argv)
         }
     }
 
-    if (!getuid() || !geteuid()) {
+    /*if (!getuid() || !geteuid()) {
         fprintf(stderr, "You can not run " PRODUCT " as superuser "
                 "for security reasons!\n");
         return EXIT_FAILURE;
-    }
+    }*/
 
     Qcommon_Init(argc, argv);
 
